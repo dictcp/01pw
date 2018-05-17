@@ -1,0 +1,14 @@
+{
+    "data": {
+        "description_unencrypted": "Vault for Site Reliability Engineer",
+        "secret": {
+            "MYSQL_PASSWORD": {
+                "description_unencrypted": "MySQL root password",
+                "value": "password"
+            }
+        },
+        "acl": {
+            "root@example.com": "root@example.com"
+        }
+    }
+}

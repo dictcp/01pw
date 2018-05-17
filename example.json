@@ -1,0 +1,29 @@
+{
+	"data": {
+		"description_unencrypted": "Vault for Site Reliability Engineer",
+		"secret": {
+			"MYSQL_PASSWORD": {
+				"description_unencrypted": "MySQL root password",
+				"value": "ENC[AES256_GCM,data:KMBmkHI5C0A=,iv:8cZ4fuMgSID+10hXtRLeTOTx6P7bgfanh2DzGlR8gMA=,tag:B33ggRINKV00pU9HwqlL8A==,type:str]"
+			}
+		},
+		"acl": {
+			"root@example.com": "ENC[AES256_GCM,data:RGWlDnT/qz4Vjwvq0+ou+Q==,iv:FaMJp6CgVWt1nouhpuP3uQqnl3pakVaqQgxDvdDM9wU=,tag:3he0PxA6X2SCVJAP7iE0bQ==,type:str]"
+		}
+	},
+	"sops": {
+		"kms": null,
+		"gcp_kms": null,
+		"lastmodified": "2018-05-17T15:03:04Z",
+		"mac": "ENC[AES256_GCM,data:Xx+s7zFT9qt6QY5sHrfpohujEbANPHFBW3i5ETH+ME4o4vqY6V7X99w2llrIlgAUQjFR4AJItBJOBdFtjdexl9Kssz89/hWKtb9pqtx8ADITLDEXelkd72ryks7EpI6OliNKr7Ys7VBZtk8lVeNzIWoSLgdN2xT+x/OcIpnd+LM=,iv:IFKjbgg6oRZeMNaz9hSXTX6hU95BuSuHwul25R9M0XU=,tag:iJR50MeHYgcogPwWmh+m1Q==,type:str]",
+		"pgp": [
+			{
+				"created_at": "2018-05-17T14:35:49Z",
+				"enc": "-----BEGIN PGP MESSAGE-----\n\nhQIMAxFhhy7z7W5rAQ/7B5D0bBM35TMRCQc/ckumh+yL+wApU9pqOVTSHQw3zeu7\nC8XDAcxs+qMpglJq60ihyUAtpTA7iBtEIJ0mq704nD49DZ2+/nda5rT0UnAvDjjf\n2OAtTKuPwzYsQw086PrfeDZG2rMKPhGgT2Z6srnu76Ai62QkpCZ6F2QHPtcRHdDS\nGAFyBB1qx6x3DUh7B4XYdqImSijYy2Vz31IkR8a4TQ9SIJgSQG7CcT696Q5OT1jJ\n1j97bckdS+zPqVgTLckpJecP1/PT+PwQ9SfBtN1IzNiwNpqvi+IszHPGfeKT87U9\ndnw3RKjNhUPG0GGq0LWD1p83EZhgH26jNKoHqvMZNbN+Mi2my7mdJBJbsRzXUAJc\nndDyE3cB8gkE5Bjdh85Wr4ZmlmI+qJg/cRsyvf0N75IKsZJbB7RfodGkiGLRIUE7\nvjvMG685zq2bSpdI1XwUjr7vUKq4mACO16/zzep1uh4/A1FVptjhq+ipwdaeDrm/\nte1vJEQfRrcWb6uOJHh9YJ4pdufew86yVvBwzexKKlM0pe8AY5if6lgEraIQ5fTm\nJVC54j5rQUI0cgLlmLfNr3zM/N//YWo7MPfTVK9DpitTH39WxZIcsSWdGR6sO6ky\nF7JS6pwBAcgGZBTDZ2AnF/0SAYb0pDOUvd5upuFpXXBZt703R06rv5AN2cirSUnS\nUQGM0fLwnBxayIMxyWb5ioCOyydCTa64JZVXRzRLXCPzBGos6LchRFQIYYWGUMrK\n3ZKU6/pwpSQXIfyfPA1h3e4JigyTnQjj9j/+bXdgsXwL4w==\n=3Ntp\n-----END PGP MESSAGE-----\n",
+				"fp": "F9E9048752EB069F"
+			}
+		],
+		"unencrypted_suffix": "_unencrypted",
+		"version": "3.0.0"
+	}
+}
