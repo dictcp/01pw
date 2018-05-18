@@ -1,10 +1,15 @@
 {
 	"data": {
+		"name_unencrypted": "example.json",
 		"description_unencrypted": "Vault for Site Reliability Engineer",
 		"secret": {
 			"MYSQL_PASSWORD": {
 				"description_unencrypted": "MySQL root password",
-				"value": "ENC[AES256_GCM,data:KMBmkHI5C0A=,iv:8cZ4fuMgSID+10hXtRLeTOTx6P7bgfanh2DzGlR8gMA=,tag:B33ggRINKV00pU9HwqlL8A==,type:str]"
+				"value": "ENC[AES256_GCM,data:STv1S9PYqpax,iv:Lw7L+FXk97rBzYX9DGicAAx19Q/t/8SFm7elGOnCDlU=,tag:+LSrkIIQsMqTPmchDeBIgw==,type:str]"
+			},
+			"MONGODB_PASSWORD": {
+				"description_unencrypted": "MongoDB root password",
+				"value": "ENC[AES256_GCM,data:04vGSMYhJLMw,iv:RK18EZ/imezwXQ0hfoPYgx9hjv+hqr/t7FWZev8GGnc=,tag:09UJoVNXJzbwVxd641dAww==,type:str]"
 			}
 		},
 		"acl": {
@@ -14,8 +19,8 @@
 	"sops": {
 		"kms": null,
 		"gcp_kms": null,
-		"lastmodified": "2018-05-17T15:03:04Z",
-		"mac": "ENC[AES256_GCM,data:Xx+s7zFT9qt6QY5sHrfpohujEbANPHFBW3i5ETH+ME4o4vqY6V7X99w2llrIlgAUQjFR4AJItBJOBdFtjdexl9Kssz89/hWKtb9pqtx8ADITLDEXelkd72ryks7EpI6OliNKr7Ys7VBZtk8lVeNzIWoSLgdN2xT+x/OcIpnd+LM=,iv:IFKjbgg6oRZeMNaz9hSXTX6hU95BuSuHwul25R9M0XU=,tag:iJR50MeHYgcogPwWmh+m1Q==,type:str]",
+		"lastmodified": "2018-05-18T14:13:26Z",
+		"mac": "ENC[AES256_GCM,data:PpRg1voRgihQJHCvgwbAii3mngjA+ZTh5a7+fTvZ1hGohn8fLYFz/bdA8bfNOeMSEiaunq6zkSsZMEVM3gJKE0Pith3Yp0FKAIzlyDJ4jI9ahiTzKQ7vAD7xYpKoDzpReBJV8h6xQUpAQ80nzNbiQy1w7zXpzUnzgtfFKy9vxGw=,iv:V0BBPhy/LEE25PWzwicb+sFydg4cl6h1AjQwAQ9Dr2o=,tag:PLjGBKNGBYHvSM1bGkO2fQ==,type:str]",
 		"pgp": [
 			{
 				"created_at": "2018-05-17T14:35:49Z",
