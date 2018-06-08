@@ -25,6 +25,15 @@ const list = () => {
     return files.filter((x) => /\.json$/.test(x)).map((x) => x.replace(/\.json$/,''))
 }
 
+const listItems = () => {
+    var files = list()
+    var vaults = {};
+    files.map((x) => {
+        vaults = { [x]: get(x), ...vaults}
+    })
+    return vaults;
+}
+
 const get = (vault) => {
     return JSON.parse(fs.readFileSync(`${prefix}/${vault}.json`)).data
 }
@@ -32,5 +41,6 @@ const get = (vault) => {
 module.exports = {
    decrypt,
    list,
+   listItems,
    get
 }

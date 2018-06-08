@@ -18,6 +18,12 @@ app.prepare().then(() => {
     res.send(JSON.stringify(vault.get(name)))
   })
 
+  server.get('/api/secrets', (req, res) => {
+    var name = req.query.name
+    res.send(JSON.stringify(vault.listItems(name)))
+  })
+
+
   server.get('/api/secret', (req, res) => {
     var name = req.query.vault
     var key = req.query.key
