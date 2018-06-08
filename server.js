@@ -1,6 +1,6 @@
 const express = require('express')
 const next = require('next')
-const sops = require('./modules/sops')
+const vault = require('./modules/vault')
 
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
@@ -15,7 +15,7 @@ app.prepare().then(() => {
   })
 
   server.get('/api/secret', (req, res) => {
-    res.send(sops.decrypt(req.query.vault, req.query.key))
+    res.send(vault.decrypt(req.query.vault, req.query.key))
   })
 
   // health-check
