@@ -9,13 +9,19 @@ const handle = app.getRequestHandler()
 app.prepare().then(() => {
   const server = express()
 
+  server.get('/api/vaults', (req, res) => {
+    res.send(JSON.stringify(vault.list()));
+  })
+
   server.get('/api/vault', (req, res) => {
-    // req.query.vault
-    res.send("not ready yet")
+    var name = req.query.name
+    res.send(JSON.stringify(vault.get(name)))
   })
 
   server.get('/api/secret', (req, res) => {
-    res.send(vault.decrypt(req.query.vault, req.query.key))
+    var name = req.query.vault
+    var key = req.query.key
+    res.send(vault.decrypt(name, key))
   })
 
   // health-check
