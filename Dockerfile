@@ -1,4 +1,4 @@
-FROM node:8
+FROM node:8-jessie
 
 ENV SOPS_VERSION=3.0.4
 
