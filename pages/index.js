@@ -4,7 +4,7 @@ import axios from 'axios';
 import dynamic from 'next/dynamic'
 
 export default class extends React.Component {
-  static async getInitialProps () {
+  static async getInitialProps({req}) {
     // FIXME
     const res = await axios.get('http://127.0.0.1:3000/api/secrets');
     return {data: res.data}
@@ -14,16 +14,18 @@ export default class extends React.Component {
     return (
       <div>
         <Head>
-            <title>01PW</title>
+            <title>01pw</title>
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/pure-min.css" />
+            <link rel="stylesheet" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css" />
         </Head>
         
         <div className="pure-g">
-            <div className="pure-u-1-3"></div>
-            <div className="pure-u-1-3">
-              <h1>01PW</h1>
-              <table className="pure-table">
+            <div className="pure-u-1-8"></div>
+            <div className="pure-u-3-4">
+              <h1>01pw</h1>
+              <h3>You are logged in as a@b.com</h3>
+              <table className="pure-table" style={{width: '100%'}}>
                 <thead>
                   <tr>
                     <th>Key</th>
@@ -46,7 +48,7 @@ export default class extends React.Component {
                 </tbody>
               </table>
             </div>
-            <div className="pure-u-1-3"></div>
+            <div className="pure-u-1-8"></div>
         </div>
       </div>
     );
