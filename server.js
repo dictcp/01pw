@@ -8,6 +8,7 @@ const handle = app.getRequestHandler()
 
 app.prepare().then(() => {
   const server = express()
+  server.use(express.json())
 
   server.get('/api/vaults', (req, res) => {
     res.send(JSON.stringify(vault.list()));
@@ -23,10 +24,10 @@ app.prepare().then(() => {
     res.send(JSON.stringify(vault.listItems(name)))
   })
 
-
-  server.get('/api/secret', (req, res) => {
-    var name = req.query.vault
-    var key = req.query.key
+  server.post('/api/secret', (req, res) => {
+    console.log(JSON.stringify(req.body))
+    var name = req.body.vault
+    var key = req.body.key
     res.send(vault.decrypt(name, key))
   })
 
