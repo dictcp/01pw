@@ -7,7 +7,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "express": "^4.16.3",
-    "lodash": "^4.17.12",
+    "lodash": "^4.17.19",
     "moment": "^2.22.1",
     "next": "^7.0.0",
     "react": "^16.4.0",
