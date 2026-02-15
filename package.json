@@ -5,8 +5,8 @@
     "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
-    "axios": "^0.18.0",
-    "express": "^4.16.3",
+    "axios": "^1.13.5",
+    "express": "^4.22.0",
     "lodash": "^4.17.12",
     "moment": "^2.22.1",
     "next": "^7.0.0",
